@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pruecode</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <main>
+      <h1>Hello World</h1>
+      <p>สวัสดีจากหน้าแรก</p>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+      // โหลด jQuery
+      $(function () {
+        $("#navbar").load("partials/navbar.html");
+        $("#footer").load("partials/footer.html");
+      });
+    </script>
+  </body>
+</html>

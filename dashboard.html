@@ -107,9 +107,11 @@
       </div>
 
       <!-- id จาก jquery -->
-      <div id="dashboard-row" class="row p-3 gap-4 mt-2"></div>
-      <div class="d-flex gap-4">
-        <div class="border p-3 rounded-4" style="width: 50%">
+      <div id="total_1" class="row p-3 gap-4 mt-2"></div>
+      <!-- chart -->
+      <div class="d-flex gap-4 align-items-stretch">
+        <!-- chart -->
+        <div class="border p-3 rounded-4 h-90" style="width: 50%">
           <div class="d-flex align-items-center justify-content-between">
             <h2 class="m-0 fs-6">Average Team KPI</h2>
             <i class="m-0 bi bi-grip-horizontal border px-1 rounded-2"></i>
@@ -123,18 +125,17 @@
               </h2>
               <h2 class="fs-6 text-black-50 fw-normal">vs last month 72%</h2>
             </div>
-            <canvas id="myChart_1"></canvas>
+            <canvas id="chart_1"></canvas>
           </div>
         </div>
-        <div class="border w-100 p-3 rounded-4">
-          <div class="d-flex align-items-center justify-content-between">
-            <h2 class="m-0 fs-6">Average Team KPI</h2>
-            <i class="m-0 bi bi-grip-horizontal border px-1 rounded-2"></i>
-          </div>
-        </div>
+        <!-- table -->
+        <div id="table_1" class="w-100 h-90 border p-3 rounded-4"></div>
       </div>
+
+      <!-- import -->
       <script src="js/dashboard/total.js"></script>
       <script src="js/dashboard/chart.js"></script>
+      <script src="js/dashboard/table.js"></script>
     </div>
   </body>
 </html>

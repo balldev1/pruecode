@@ -18,7 +18,7 @@ $(document).ready(function () {
 
   stats.forEach((item) => {
     // id ทีจะไปใช้ใน frontend
-    $("#dashboard-row").append(`
+    $("#total_1").append(`
       <div class="col border rounded-4 p-3">
         <div class="d-flex align-items-center justify-content-between">
           <div class="d-flex align-items-center gap-2">

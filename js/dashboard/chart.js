@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const ctx = document.getElementById("myChart_1");
+  const ctx = document.getElementById("chart_1");
 
   new Chart(ctx, {
     type: "bar", // line, pie, doughnut, radar ฯลฯ

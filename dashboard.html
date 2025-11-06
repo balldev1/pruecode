@@ -17,6 +17,7 @@
       /* ให้เต็มหน้าจอแนวตั้ง */
       body {
         background-color: rgb(22, 19, 19);
+        height: 100%;
       }
       .menu-item:hover {
         background-color: var(--bs-primary) !important;
@@ -25,19 +26,25 @@
       .menu-item:hover i {
         color: white !important;
       }
+      .no-border {
+        text-decoration: none;
+        outline: none !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
     </style>
   </head>
-  <body class="d-flex bg-dark text-white">
+  <body class="d-flex h-100 bg-dark text-white">
     <!-- sidebar -->
     <div class="d-flex flex-column gap-2 p-4" style="width: 25%">
-      <div class="d-flex align-items-center gap-2">
+      <a href="/login.html" class="no-border d-flex align-items-center gap-2">
         <img
           src="public/logo.png"
           class="img-fluid"
           style="width: 20%"
           alt="Logo" />
-        <h2 class="fs-4 fw-bold">balldevnaja</h2>
-      </div>
+        <h2 class="m-0 text-white fs-4 fw-bold">balldevnaja</h2>
+      </a>
       <div
         class="position-relative bg-white d-flex text-black p-2 mt-4 rounded-3">
         <img
